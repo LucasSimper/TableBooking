@@ -13,3 +13,4 @@
  var myVariable="Accept"
 
 </html>
+ 
