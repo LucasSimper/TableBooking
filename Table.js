@@ -1,40 +1,28 @@
+//This class keeps table data and decides whether or not a table is red or green. WIP
+function testTable() {
 
+    if (localStorage.getItem('nbOfGuestsX') <= 2) {
 
-//This class keeps table data and decides whether or not a table is red or green. WIP 
-
-var table1 = {capacity:"2"};
-
-if(localStorage.getItem(nrOfPeople) < 2 && localStorage.getItem(isReserved1) === false ) {
-    console.log('available') }
-    // make table red -- pre code work see to check if table is available
-else {
-    // make table red -- pre code work see to check if table is available
+        document.getElementById('testTable').style.backgroundColor = '#006400';
+        console.log('available')
+    }
+    // make table green -- pre code work see to check if table is available
+    else {
+        document.getElementById('testTable').style.backgroundColor = '#b22222';
+        // make table red -- pre code work see to check if table is available
+    }
 }
 
-var table2 = {capacity:"4"};
+function table1() {
 
-if(localStorage.getItem(nrOfPeople) < 4 && localStorage.getItem(isReserved2) === false ) {
-    console.log('available') }
-    // make table red -- pre code work see to check if table is available
-else {
-    // make table red -- pre code work see to check if table is available
-}
+    if (localStorage.getItem('nbOfGuestsX') <= 2 && localStorage.getItem('isReserved1') === false){
 
-var table3 = {capacity:"6"};
-
-if(localStorage.getItem(nrOfPeople) < 6 && localStorage.getItem(isReserved3) === false ) {
-    console.log('available') }
-    // make table red -- pre code work see to check if table is available
-else {
-    // make table red -- pre code work see to check if table is available
-}
-
-
-var table4 = {capacity:"8"};
-
-if(localStorage.getItem(nrOfPeople) < 8 && localStorage.getItem(isReserved4) === false ) {
-    console.log('available') }
-    // make table red -- pre code work see to check if table is available
-else {
-    // make table red -- pre code work see to check if table is available
+        document.getElementById('table1').style.backgroundColor = '#006400';
+        console.log('available')
+    }
+    // make table green -- pre code work see to check if table is available
+    else {
+        document.getElementById('table1').style.backgroundColor = '#b22222';
+        // make table red -- pre code work see to check if table is available  
+    }
 }

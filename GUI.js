@@ -1,42 +1,29 @@
 
-
-function saveUn() {
-    var theDate= document.getElementById("un");
-    localStorage.setItem("", theDate.value)
+// The next two functions take the inputted data regarding number of guests and date of arrival and saves that to local
+// storage to be used in determining whether a table should be red or green
+function saveDate() {
+    let theDate= document.getElementById('ub').value;
+    localStorage.setItem("theDateX", theDate);
+    console.log("theDateX");
 }
 
-function testB() {
-    var storedValue = localStorage.getItem("email");
-    console.log("email");
+function saveNb() {
+    let nbOfGuests= document.getElementById("un").value;
+    localStorage.setItem("nbOfGuestsX", nbOfGuests);
+    console.log("nbOfGuestsX")
 }
 
-/* function saveUb() {
-    var guestNb = document.getElementById('ub').value;
-    alert(guestNb);
+// Test functions to see if above functions work
 
+function testDate () {
+    let x = localStorage.getItem('theDateX');
+    console.log(x);
+    alert(x)
 }
 
-function saveUn() {
-    var arrivalTime = document.getElementById('un').value;
-    alert(arrivalTime);
+function testNumber () {
+    let x = localStorage.getItem('nbOfGuestsX');
+    console.log(x);
+    alert(x)
 }
 
-
- */
-/* Date and Time of Arrival<input type="datetime-local" id="un" size="200" /><br />
-<input type="submit" onclick="saveUn();" />
-
-function saveUn() {
-    var arrivalTime = document.getElementById('un').value;
-    alert(arrivalTime);
-}
-
- */
-
-/* function saveDate() {
-    var dateAndTime = document.getElementById('xb').value;
-    alert(username);
-}
-
-
- */

@@ -2,6 +2,15 @@
 <html lang="en">
 <head>
 
+    <style>
+        .cssTable1 {
+            height: 50px;
+            width: 100px;
+            background-color: #555;
+        }
+    </style>
+
+
     <link rel="stylesheet type=" text/css href="GUI.CSS"/>
     <script src="GUI.js" defer></script>
     <script src="Table.js" defer></script>
@@ -12,16 +21,27 @@
 <body>
 
 <form>
-    Date: <br>
-    <input type="date" id="un" size="200"><br>
-    <input type="submit" onclick="saveUn();">
+    Date and Time of Arrival: <br>
+    <input type="datetime-local" id="ub">
+    <input type="submit" onclick="saveDate();"> <br>
+
+
+    Number of Guests: <br>
+    <input type="number" id="un">
+    <input type="submit" onclick="saveNb();">
 
 </form>
 
 
+<button onclick="testDate()" type="button">StoredDate</button>
+<button onclick="testNumber()" type="button">StoredNb</button><br>
 
 
 
+<div class="cssTable1" id="testTable">
+    <br> <br> <br> <button onclick="testTable()" type="button">Test color change</button><br>
+
+</div>
 
 </body>
 </html>
