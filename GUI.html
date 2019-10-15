@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <button onclick="localStorage.clear();" type="button">Clear Local Storage</button>
     <style>
         .cssTable1 {
             height: 50px;
@@ -11,9 +11,7 @@
     </style>
 
 
-    <link rel="stylesheet type=" text/css href="GUI.CSS"/>
-    <script src="GUI.js" defer></script>
-    <script src="Table.js" defer></script>
+    <link rel="stylesheet type=" text/css href="GUI.css"/>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
@@ -22,13 +20,11 @@
 
 <form>
     Date and Time of Arrival: <br>
-    <input type="datetime-local" id="ub">
-    <input type="submit" onclick="saveDate();"> <br>
-
+    <input type="datetime-local" id="ub"> <br>
 
     Number of Guests: <br>
     <input type="number" id="un">
-    <input type="submit" onclick="saveNb();">
+    <input type="submit" onclick="saveNb();saveDate();">
 
 </form>
 
@@ -38,10 +34,15 @@
 
 
 
-<div class="cssTable1" id="testTable">
+<div class="cssTable1" id="testTable" >
     <br> <br> <br> <button onclick="testTable()" type="button">Test color change</button><br>
 
 </div>
 
 </body>
+
+
+<script src="GUI.js" defer></script>
+<script src="Table.js" defer></script>
+
 </html>
