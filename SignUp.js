@@ -8,22 +8,24 @@ var age = document.getElementById("age")
 var genderFemale = document.getElementById("genderRadioFemale")
 var genderMale = document.getElementById("genderRadioMale")
 
-var signUpButton = document.getElementById(signUpButton)
-//Age- virker ikke
+// bruges ikke lige nu: var signUpButton = document.getElementById("signUpButton")
+
+
 /*
+Funktion til at omregne fødselsdato til en reel alder- virker ikke (Muligvis fordi vi skal ændre age-objektet fra localstorage til et objekt??)
 function calculateAge () {
     var b = Date.now();
     var a = age.getMilliseconds();
     var ageInMs = b-a;
     var ageInYears = ageInMs/(24*3600*365.25*1000);
+    Math.floor (ageInYears);
    return ageInYears;
 }
 */
 
-//Create function that makes sure that day of birth cannot be set to anything else than an actual date.
 
+// Funktion til at kontrollere at alle inputs bliver overholdt
 function checkInputs() {
-
     var passed = true;
     // Variabel til at vise at det KUN må indeholde digits
     var numbers = /^\d+$/;
@@ -89,14 +91,16 @@ function checkInputs() {
         document.getElementById("password").style.borderColor = "red";
         passed = false;
     }
+    //Create function that makes sure that day of birth cannot be set to anything else than an actual date.
+    // Create function that makes sure that name cannot consist of anything else than letters
 
     return passed
 }
-
+// Denne funktion skal skiftes til at være en onclick funktion. SKal bruge var signUpButton men ved ikke hvordan
     function storeLogin() {
         if (checkInputs () == true) {
-            storeUsers();
-            /* localStorage.setItem ("firstName", firstName.value);
+            // virker ikke lige nu storeUsers();
+             localStorage.setItem ("firstName", firstName.value);
             localStorage.setItem("lastName", lastName.value);
             localStorage.setItem("password", password.value);
             if ( genderMale.checked == true){
@@ -107,8 +111,9 @@ function checkInputs() {
             }
             localStorage.setItem("phoneNumber", phoneNumber.value);
             localStorage.setItem("eMail", eMail.value);
-            localStorage.setItem("age", age.value); */
+            //localStorage.setItem("age", age.value);
         }
+        alert ("You have now created a user! We will now direct you to the booking system!");
 
     }
 
