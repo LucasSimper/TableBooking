@@ -3,7 +3,7 @@
 /* skal kunne logge ind- ud fra User Data
 skal den kunne vide hvilken bruger der logger ind
  */
-class User {
+/*class User {
     constructor(firstName, lastName, password, age, gender, eMail, phoneNumber){
         this.firstName = firstName;
         this.lastName = lastName;
@@ -16,14 +16,16 @@ class User {
     var allUsers = [];
 
     function storeUsers () {
-        user_id_generator();
+       // Make a function that creates a user_id_generator();
 
         var userObj = new User (document.getElementById("firstName").value, document.getElementById("lastName").value, document.getElementById("password").value,
             document.getElementById("age").value, document.getElementById("gender").value, document.getElementById("eMail").value, document.getElementById("phoneNumber").value)
 
-        userObj.user_id = user_idgen;
+        //Adds the value of the user_ID
+        userObj.User_id = user_idgen;
         console.log(userObj);
 
+       Pushes the array with user-objects into our localstorage
         localStorage.setItem("allUsers", JSON.stringify(allUsers));
         console.log(JSON.parse(localStorage.getItem("allUsers")));
         alert("Det er nu blevet gemt!")
@@ -34,7 +36,7 @@ class User {
 //array is empty. every new user will be pushed to the array
 
 //use allUsers.push() to add new Users to the array
-/*new Users(){
+new Users(){
     this.firstName = localStorage.getItem(firstName);
     this.lastName =localStorage.getItem(lastName);
 }
