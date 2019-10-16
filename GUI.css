@@ -1,0 +1,53 @@
+
+/* This changes the size? */
+.tables {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+/* This changes the size as well */
+
+.table {
+    display: flex;
+}
+
+
+/* This Hide the browser's default checkbox */
+.table input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+}
+
+/* This lets the checkbox be clicked and then changes the color, prob where i need to access its clicked state */
+.table input[type=checkbox]:checked + label {
+    background: #8a2be2;
+}
+
+/* This doesnt allow the user to click on a checkbox will be used so user cant click on booked table */
+.table input[type=checkbox]:disabled + label:hover {
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+/* This is the data for the table as well */
+
+.table label {
+    display: block;
+    position: relative;
+    width: 15%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.5rem;
+    padding: 4px 0;
+    border-radius: 5px;
+    background-color: #006400;
+}
+
+/* This creates the shadow effect around when hovering over */
+.table label:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0px 2px #5C6AFF;
+}
