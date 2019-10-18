@@ -3,3 +3,5 @@
 /*Skal derigennem også reservere bordet. Selvom bordet ikke er blevet bekræftet endnu
 skal andre brugere ikke kunne booke bordet.
  */
+
+array, if statement and for loop
