@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link type="text/css" rel="stylesheet" href="Sign_up.css">
+</head>
+<header>
+    <div class="container">
+        <img src="" alt="logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="Login_page.html">Login</a></li>
+                <li><a href="Sign_up.html">Sign Up!</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<body>
+<h1 Sign up!></h1>
+
+<form id="signUpForm">
+    First name: <br>
+    <input id="firstName" type="text"  value="" /><br>
+    Last name: <br>
+    <input id="lastName" type="text" value=""/><br>
+    Password: <br>
+    <input id="password" type="password" value=""/><br>
+    Repeat password <br>
+    <input id="confirmPassword" type="password" value=""/><br>
+    Gender: <br>
+   <input  id="genderRadioMale" type="radio" name="gender" value="male"> Male<br>
+    <input  id="genderRadioFemale" type="radio" name="gender" value="female"> female<br>
+    <br> Phone number: <br>
+    <input id="phoneNumber" type="text" value=""/><br>
+    Email: <br>
+    <input id ="eMail" type="email" value=""/><br>
+    Day of birth: <br>
+    <input id="age" type="date"/><br><br>
+    <input id="signUpButton" type="submit" value="Sign Up!" onclick="storeLogin()"/>
+</form>
+
+
+</select>
+
+<!-- To test if the input is actually stored in the localStorage-->
+<h2>Test localStorage</h2>
+<input id="testButton" type="submit" value="Show user" onclick="showUser()"/>
+
+
+</body>
+<script src="User.js"></script>
+</html>
