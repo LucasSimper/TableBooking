@@ -1,10 +1,9 @@
 .container {
     width: 80%;
     margin: 0 auto;
-
 }
 header {
-    background: black ;
+    background: black;
 }
 
 header::after{
@@ -42,18 +41,18 @@ nav a {
 
 
 nav a:hover {
-    color:#111;
+    color:whitesmoke;
 }
 
 nav a::before{
     content:'';
     display: block;
     height: 5px;
-    background-color: #444;
+    background-color: whitesmoke;
 
     position: absolute;
     top: 0;
-    width: 0;
+    width: 0%;
     transition: all ease-in-out 350ms;
 }
 
@@ -65,49 +64,11 @@ nav a:hover::before{
 body  {
     background-image: url("https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-025.jpg");
     background-size: cover;
-
 }
-
 
 #LoginForm {
     margin-left: 50%;
     margin-right: 50%;
     margin-top: 15%;
     font-family: sans-serif;
-}
-
-#LoginForm{
-    width: 100%;
-    overflow: hidden;
-    font-size: 20px;
-    padding: 8px 0;
-    margin: 8px 0;
-    border-bottom: 2px solid #4caf50;
-    box-sizing: border-box;
-}
-#LoginForm{
-    input[type=text], input[type=password]
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-}
-#LoginForm{
-    input[type=text]:focus, input[type=password]:focus
-    background-color: #ddd;
-}
-#Login\!{
-    background-color: #4caf50;
-    color: white;
-    padding: 16px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 4.9;
-}
-#Login\!:hover{
-    opacity: 1;
 }

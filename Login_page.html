@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet type=" text/css href="JBL.css"/>
-    <script src="User.js" defer></script>
-    <script src="UserData.js" defer></script>
+    <link rel="stylesheet type=" text/css href="Login_page.css"/>
     <meta charset="UTF-8">
     <title>Title</title>
+
 </head>
+<header>
+    <div class="container">
+        <img src="" alt="logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="Login_page.html">Login</a></li>
+                <li><a href="Sign_up.html">Sign Up!</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 <body>
 
+<form id="LoginForm" <!--action="GUI.html"-->
+Email: <br>
+<input id="enteredEmail" placeholder="Email" type="text"/><br>
+password: <br>
+<input id="enteredPassword" placeholder="Password" type="text"/><br>
+<input id="Login!" type="submit" value="Login!"  /> <br>
+</form>
+<!-- Lav login side.
+If Email og password=admin login- gå til en bestemt side
+If Email og password=Local Storage skal de logge ind på en anden side-->
+
+
 </body>
+<script src ="Login.js" ></script>
+<script src="UserData.js" ></script>
 </html>
