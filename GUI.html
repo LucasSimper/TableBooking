@@ -3,7 +3,7 @@
 <head>
     <button onclick="localStorage.clear();" type="button">Clear Local Storage</button>
 
-    <link rel="stylesheet type=" text/css href="GUI.css"/>
+    <link rel="stylesheet type=" href="GUI.css"/>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
@@ -12,25 +12,25 @@
 
 <form>
     Date and Time of Arrival: <br>
-    <input type="datetime-local" id="ub"> <br>
+    <input type="date" id="ub"> <br>
 
     Number of Guests: <br>
     <input type="number" id="un">
-    <input type="submit" onclick="saveNb();saveDate();">
+    <input type="submit" onclick="saveNb();saveDate();testTable()">
 
 </form>
 
 
-<button onclick="testDate()" type="button">StoredDate</button>
+<!-- <button onclick="testDate()" type="button">StoredDate</button>
 <button onclick="testNumber()" type="button">StoredNb</button><br>
 <button onclick="testTable()" type="button">Test color change</button>
-
+-->
 </div>
 
 
 
 <li class="table">
-    <input type="checkbox" id="1A"/>
+    <input type="checkbox" id="1A" style="background: darkgreen"/>
         <label for="1A">8 people</label>
 </li>
 
