@@ -33,7 +33,7 @@ nav li {
 }
 
 nav a {
-    color: yellow;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 18px;
@@ -59,4 +59,16 @@ nav a::before{
 nav a:hover::before{
     width: 100%;
 
+}
+
+body  {
+    background-image: url("https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-025.jpg");
+    background-size: cover;
+}
+
+#LoginForm {
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 15%;
+    font-family: sans-serif;
 }
