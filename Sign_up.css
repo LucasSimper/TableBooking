@@ -3,7 +3,7 @@
     margin: 0 auto;
 }
 header {
-    background: cadetblue ;
+    background: black;
 }
 
 header::after{
@@ -33,7 +33,7 @@ nav li {
 }
 
 nav a {
-    color: white;
+    color: yellow;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 18px;
@@ -41,14 +41,14 @@ nav a {
 
 
 nav a:hover {
-    color:#111;
+    color:whitesmoke;
 }
 
 nav a::before{
     content:'';
     display: block;
     height: 5px;
-    background-color: #444;
+    background-color: whitesmoke;
 
     position: absolute;
     top: 0;
