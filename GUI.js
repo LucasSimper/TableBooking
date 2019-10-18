@@ -1,4 +1,3 @@
-
 // The next two functions take the inputted data regarding number of guests and date of arrival and saves that to local
 // storage to be used in determining whether a table should be red or green
 function saveDate() {
@@ -26,4 +25,3 @@ function testNumber () {
     console.log(x);
     alert(x)
 }
-
