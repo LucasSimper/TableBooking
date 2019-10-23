@@ -4,26 +4,22 @@
 skal andre brugere ikke kunne booke bordet.
  */
 // lav et array med 3 variable- 3 forskellige datoer og alle med false statement
-class reservations {
+class Reservations {
     constructor (userID, date, status) {
         var user_id = "";
         var date = "";
         var status = "";
     }}
 
+// Variabler til at flytte elementer over il Admin.html
+var storeReservations = [];
+storeReservations.push(new Reservations(1, 2019-10-19, false));
+storeReservations.push(new Reservations(2, 2019-10-8, false));
+storeReservations.push(new Reservations(3,2019-10-21, true));
 
-var bookTableButton = document.getElementById("book_table")
-
-var reservation1 = new reservations(
-    1, 2019-10-19, false);
-var reservation2 = new reservations(
-    2,2019-10-08, false);
-var reservation3 = new  reservations(
-    3, 2019-10-21,true);
-var storedReservations = [reservation1, reservation2, reservation3];
+console.log();
 
 
-document.createElement("")
 //if statement hvis noget er korrekt- createElement funktion
 
 
@@ -33,9 +29,7 @@ document.createElement("")
     // Derefter se om det er en true eller false statement
     //Hvis statement er false, vis i en table, Hvis true, vis i en anden table
     //
-   function storereservations() {
-
-   }
+  // function storereservations() {}
 
    //Dummy data- 3 forskellige
 

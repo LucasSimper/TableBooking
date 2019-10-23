@@ -20,6 +20,7 @@ logInButton.onclick = function (e) {
             alert("Hello user")
             userExists = true;
             document.location = "GUI.html";
+
             break;
         } else if (eMail.value == existingUser[i].eMail && password.value != existingUser[i].password) {
             alert("Wrong password- try again!");
