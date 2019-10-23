@@ -3,6 +3,7 @@
 /*Skal derigennem også reservere bordet. Selvom bordet ikke er blevet bekræftet endnu
 skal andre brugere ikke kunne booke bordet.
  */
+
 // lav et array med 3 variable- 3 forskellige datoer og alle med false statement
 class Reservations {
     constructor (userID, date, status) {
@@ -34,3 +35,6 @@ console.log();
    //Dummy data- 3 forskellige
 
 //Skal kunne finde status på dem
+=======
+
+array, if statement and for loop
