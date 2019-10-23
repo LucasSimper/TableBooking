@@ -27,8 +27,8 @@ var id_generator = 0;
 
 
 
-
-    function storeUsers () {
+var signUpButton = document.getElementById("signUpButton");
+    signUpButton.onclick = function () {
         if (checkInputs()== true){
         id_gen();
 
